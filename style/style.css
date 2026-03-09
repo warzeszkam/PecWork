@@ -135,7 +135,12 @@ h2 {
         flex-direction: column;
         justify-content: center;
     }
+
+    .kontaktInfo{
+        flex-direction:column;
+    }
 }
+
 
 
 .kontakt{
@@ -157,17 +162,40 @@ justify-content: space-between;
 .kontaktLevy{
 flex:1;
 font-size:16px;
-line-height:1.6;
+line-height:1.9;
+
+}
+
+.kontaktLevy p{
+    font-size: 18px;
+    padding-top: 12px;
+    
 }
 
 .kontaktLevy h2{
 margin-bottom:20px;
+font-size: 40px;
+}
+
+.kontaktIco{
+    padding-right: 10px;
+}
+
+#name {
+font-size: 25px;
+padding-bottom: 8px;
+}
+
+#mail {
+    text-decoration: none;
+    color: #333;
 }
 
 /* pravý sloupec */
 
 .kontaktPravy{
 flex:2;
+
 }
 
 /* formulář */
@@ -212,10 +240,4 @@ color:#333;
 
 /* mobil */
 
-@media (max-width:800px){
 
-.kontaktInfo{
-flex-direction:column;
-}
-
-}
