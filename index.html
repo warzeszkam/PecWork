@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,17 +14,18 @@
             <div class="nav-left">
                 <a href="#"><img src="./asset/logo1_lite.svg" alt="Logo" class="logo"/></a>
             </div>
-    
+            
                 <ul class="nav-center">
                     <li><a href="#">Domů</a></li>
                     <li><a href="#">Nabídka</a></li>
                     <li><a href="#">Galerie</a></li>                    
                     <li><a href="#">Kontakt</a></li>
                 </ul>
+                <label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
             
             <div class="nav-right">
                 <a href="https://www.instagram.com/pecuto.cz/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
+                    <span class="fa-brands fa-instagram"></span>
                 </a>
             </div>
         </nav>
@@ -33,7 +34,7 @@
            
         </div>
 
-        <div class="sekceJedna">
+        <section class="sekceJedna">
             <h1>Test Commitu</h1>
             <p>Zakázková cukrářská výroba, která se specializuje na výrobu dortů, zákusků a dalších sladkých dobrot. Naše cukrárna 
                 nabízí širokou škálu dezertů, které jsou nejen chutné, ale také vizuálně atraktivní. Každý náš výrobek je pečlivě 
@@ -75,41 +76,55 @@
                 připravován s láskou a pozorností k detailu, aby splnil očekávání našich zákazníků. Ať už hledáte dort na narozeniny, 
                 svatbu nebo jinou speciální příležitost, jsme tu pro vás s našimi jedinečnými a lahodnými sladkostmi.</p>
         
-        </div>
-        <div class="sekceDva">
+        </section>
+        
+        <section class="sekceNabidka">
             <h2>Nabídka</h2>
             <div class="karta">Dezerty</div>
             <div class="karta">Dorty</div>
             <div class="karta">Perníčky</div>
             <div class="karta">Cheesecake</div>
-        </div>
-        <div class="sekceTri">
-            <h2>Galerie</h2>
-        </div>
-        <div class="sekceTri">
-            <h2>Kontakt</h2>
-            <div class="dvaSloupce">
-                <div class="sloupecJedna">
-                    <p><b>Zuzana Warzeszková</b></p>
-                    <p>Mariánské náměstí 100, Ostrava</p>
-                    <p>+420 774 821 787</p>
-                    <p>info@pecuto.cz</p>
+        </section>
+        
+        <section class="sekceGalerie">
+                <h2>Galerie</h2>
+        
+        </section>
+    
+        <section class="kontakt">
+            <div class="kontaktInfo">
+                <div class="kontaktLevy">
+                    <h2>Kontakt</h2>
+
+                    <p><strong>Zuzana Warzeszková</strong></p>
+                    <p><span class="fa fa-sharp fa-solid fa-house"></span> Mariánské náměstí 100<br>Ostrava</p>
+
+                    <p><span class="fa fa-phone"></span> +420 774 821 787</p>
+                    <p><span class="fa fa-sharp fa-thin fa-envelope"></span> info@pecuto.cz</p>
                     <p>IČO: 08831831</p>
                 </div>
+            
+                <div class="kontaktPravy">
+                    <form class="kontaktForm">
 
-                <div class="sloupecDva">
-                    <form>
                         <input type="text" placeholder="Jméno" required>
                         <input type="email" placeholder="Email" required>
                         <input type="text" placeholder="Předmět" required>
-                        <textarea placeholder="Zpráva" required></textarea> 
-                        <button type="submit">Odeslat</button>   
-                        <button type="submit">Resetovat</button>   
+
+                        <textarea placeholder="Zpráva" rows="5" required></textarea>
+
+                        <div class="tlacitka">
+                            <button type="submit">Odeslat</button>
+                            <button type="reset" class="secondary">Resetovat</button>
+                        </div>
+
                     </form>
                 </div>
             </div>
+        </section>
+        <section class="mapaSekce">
             <div class="mapa">
-                <iframe
+               <!-- <iframe
                     width="600"
                     height="450"
                     style="border:0"
@@ -117,10 +132,12 @@
                     allowfullscreen
                     referrerpolicy="no-referrer-when-downgrade"
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCEl6vsRpH9v4Jm3HIJ9aXxGZC_PFkU3T0&q=Space+Needle,Seattle+WA">
-                </iframe>
+                </iframe> -->
             </div>
-        </div>
-        <footer class="footer"><span>© 2026 Pečuto. All rights reserved.</span></footer>
-    </div> 
-</body>
+        </section>
+        <section class="footerSekce">
+                <footer class="footer"><span>© 2026 Pečuto. All rights reserved.</span></footer> 
+        </section>
+    </div>
+    </body>
 </html>

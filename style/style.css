@@ -84,6 +84,30 @@ h1 {
     padding-top: 20px;
 }
 
+/*
+
+h2 {
+    color: #e1306c;
+    display: inline-block;
+    border: 1px solid #e1306c;
+}
+
+.kontaktInfo {
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.sloupecJedna {
+    flex: 1;
+    padding: 20px;
+}
+
+.sloupecDva {
+    flex: 1;
+    padding: 20px;
+}  */
+
 .footer {
     background-color: #1A1A1A;
     margin: 0;
@@ -92,4 +116,106 @@ h1 {
     text-align: center;
     padding: 20px;
     color: #aaa;
+}
+
+ .menu-icon {
+        display: none;
+    }
+
+
+/* Pokud je šířka displaye menš než 768px pak zobrazit burger menu. */    
+@media (max-width: 600px) {
+   
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .nav-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+.kontakt{
+padding:60px 20px;
+background:#f5f5f5;
+}
+
+.kontaktInfo{
+max-width:1100px;
+margin:auto;
+display:flex;
+gap:60px;
+align-items:flex-start;
+justify-content: space-between;
+}
+
+/* levý sloupec */
+
+.kontaktLevy{
+flex:1;
+font-size:16px;
+line-height:1.6;
+}
+
+.kontaktLevy h2{
+margin-bottom:20px;
+}
+
+/* pravý sloupec */
+
+.kontaktPravy{
+flex:2;
+}
+
+/* formulář */
+
+.kontaktForm{
+display:flex;
+width: 100%;
+flex-direction:column;
+gap:15px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.kontaktForm input,
+.kontaktForm textarea{
+padding:12px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:14px;
+}
+
+.tlacitka{
+display:flex;
+gap:10px;
+}
+
+.kontaktForm button{
+padding:12px 18px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#333;
+color:white;
+}
+
+.kontaktForm button.secondary{
+background:#ccc;
+color:#333;
+}
+
+/* mobil */
+
+@media (max-width:800px){
+
+.kontaktInfo{
+flex-direction:column;
+}
+
 }
