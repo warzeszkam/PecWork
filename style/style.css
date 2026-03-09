@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", arial, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    /* Možnost mít position: sticky, menu pak neroluje dolů. Je potřeba pořešit schování nebo velikost obrázku za MENU. 
+    Dále pak hamburger menu pro mobily. @media */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.nav-left .logo {
+    height: 40px;
+}
+
+.logo svg {
+    width: auto;
+    height: 40px;
+}
+
+.nav-center {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-center a {
+       color: #999999;
+       font-weight: 800;
+       text-transform: uppercase;
+       padding: 11px;
+       display: inline-block;
+       text-decoration: none;
+}
+
+.nav-center a:hover {
+    color: #1A1A1A;
+    text-decoration: underline;
+}
+
+.nav-right a {
+    font-size: 32px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-right a:hover {
+    color: #e1306c;
+    font-size: 34px;    
+}
+
+.mainFrame {
+    background-image: url("../asset/frontPage.jpg");
+     
+    min-height: 100vh; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer {
+    background-color: #1A1A1A;
+    margin: 0;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
