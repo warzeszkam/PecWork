@@ -66,17 +66,6 @@ body {
     font-size: 34px;    
 }
 
-.mainFrame {
-   /* background-image: url("../asset/frontPage.jpg"); 
-     
-    min-height: 100dvh; 
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
-
 .mainImage {
     height: 100dvh; 
     width: 100%;
@@ -86,6 +75,20 @@ body {
     background-size: cover;
 
     object-fit: cover;
+}
+
+.sekceJedna {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+}
+
+.sekceNabidka {
+    padding: 60px 20px;
+    
+}
+
+.sekceGalerie {
+    padding: 60px 20px;
 }
 
 h1 {
