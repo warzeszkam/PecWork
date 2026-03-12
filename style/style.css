@@ -220,7 +220,7 @@ h1 {
         justify-content: center;
     }
 
-    .mainObraz { 
+    .mainObraz, .mainFrame { 
         min-height: 50vh;
     }
 
