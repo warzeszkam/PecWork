@@ -123,26 +123,6 @@ h2 {
     }
 
 
-/* Pokud je šířka displaye menš než 768px pak zobrazit burger menu. */    
-@media (max-width: 600px) {
-   
-    .menu-icon {
-        display: inline-block;
-    }
-
-    .nav-center {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .kontaktInfo{
-        flex-direction:column;
-    }
-}
-
-
-
 .kontakt{
 padding:60px 20px;
 background:#f5f5f5;
@@ -152,24 +132,28 @@ background:#f5f5f5;
 max-width:1100px;
 margin:auto;
 display:flex;
+flex-wrap: wrap;
 gap:60px;
-align-items:flex-start;
+align-items:center;
 justify-content: space-between;
 }
 
 /* levý sloupec */
-
 .kontaktLevy{
 flex:1;
 font-size:16px;
 line-height:1.9;
-
+min-width: 200px;
 }
 
 .kontaktLevy p{
     font-size: 18px;
-    padding-top: 12px;
-    
+    padding-top: 12px;    
+}
+
+.kontaktLevy a {
+    text-decoration: none;
+    color: #333;
 }
 
 .kontaktLevy h2{
@@ -182,62 +166,99 @@ font-size: 40px;
 }
 
 #name {
-font-size: 25px;
-padding-bottom: 8px;
-}
-
-#mail {
-    text-decoration: none;
-    color: #333;
+    font-size: 25px;
+    padding-bottom: 8px;
 }
 
 /* pravý sloupec */
-
 .kontaktPravy{
-flex:2;
-
+    flex:2;
+    min-width: 300px;
 }
 
 /* formulář */
-
 .kontaktForm{
-display:flex;
-width: 100%;
-flex-direction:column;
-gap:15px;
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    display:flex;
+    width: 100%;
+    flex-direction:column;
+    gap:15px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .kontaktForm input,
 .kontaktForm textarea{
-padding:12px;
-border:1px solid #ddd;
-border-radius:6px;
-font-size:14px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:14px;
 }
 
 .tlacitka{
-display:flex;
-gap:10px;
+    display:flex;
+    gap:10px;
 }
 
 .kontaktForm button{
-padding:12px 18px;
-border:none;
-border-radius:6px;
-cursor:pointer;
-background:#333;
-color:white;
+    padding:12px 18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:#333;
+    color:white;
 }
 
 .kontaktForm button.secondary{
-background:#ccc;
-color:#333;
+    background:#ccc;
+    color:#333;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;    
+}
+
+.mapaCenter {
+    width: 90%;    
+}
+
+.mapaFull {
+    height: 50vh;
+    width: 100%;
+    border: 0px;
 }
 
 /* mobil */
+/* Pokud je šířka displaye menš než 768px pak zobrazit burger menu. */    
+@media (max-width: 768px) {
+   
+    .menu-icon {
+        display: inline-block;
+    }
 
+    .nav-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .kontaktInfo{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .kontaktLevy {
+        min-width: 200px;
+    }
+
+    .kontaktPravy{
+        min-width: 300px;
+    }
+
+    .kontaktForm {
+        width: 100%;
+    }
+}
 
